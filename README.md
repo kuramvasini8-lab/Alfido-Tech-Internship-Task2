@@ -20,21 +20,13 @@ This project was created to improve practical knowledge of:
 
 # 🌐 Hosted Link
 
-Add your GitHub Pages link here:
-
-```txt
-https://your-username.github.io/web-development-quiz/
-```
+https://kuramvasini8-lab.github.io/Alfido-Tech-Internship-Task2/
 
 ---
 
 # 💻 Source Code Repository
 
-Add your GitHub repository link here:
-
-```txt
-https://github.com/your-username/web-development-quiz
-```
+https://github.com/kuramvasini8-lab/Alfido-Tech-Internship-Task2
 
 ---
 
@@ -98,10 +90,8 @@ web-development-quiz/
 ├── style.css
 ├── script.js
 ├── README.md
-```
 
 ---
-
 # 🚀 How to Run the Project
 
 1. Download or clone the repository
