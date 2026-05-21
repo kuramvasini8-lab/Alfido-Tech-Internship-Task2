@@ -85,10 +85,14 @@ This project heavily focuses on **DOM Manipulation** using JavaScript.
 # 📁 Project Structure
 
 Quiz App/
+
 │
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── README.md
 
 ---
