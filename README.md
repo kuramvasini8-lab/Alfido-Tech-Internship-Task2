@@ -87,6 +87,7 @@ This project heavily focuses on **DOM Manipulation** using JavaScript.
 Quiz App/
 
 │
+
 ├── index.html
 
 ├── style.css
