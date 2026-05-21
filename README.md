@@ -84,7 +84,7 @@ This project heavily focuses on **DOM Manipulation** using JavaScript.
 
 # 📁 Project Structure
 
-web-development-quiz/
+Quiz App/
 │
 ├── index.html
 ├── style.css
