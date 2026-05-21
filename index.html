@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Dev Quiz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PARTICLES -->
+<div class="particles">
+  <span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span>
+</div>
+
+<!-- WELCOME -->
+<div id="welcome" class="screen active center">
+<p style="font-size:40px;"><b>Web Development Quiz</b></p></br>
+<p style="font-size:20px;">Test your HTML, CSS & JS knowledge</p>
+</br>
+<button class="main-btn" onclick="goToInstructions()">Start </button>
+</div>
+
+<!-- INSTRUCTIONS -->
+<div id="instructions" class="screen center">
+
+  <h2>Instructions</h2>
+
+  <div class="instruction-box">
+
+    <p>📌 The quiz contains 10 multiple-choice questions.</p>
+
+    <p>⏳ Each question must be answered within 15 seconds.</p>
+
+    <p>✅ Select the option you think is correct.</p>
+
+    <p>🚫 Once selected, answers cannot be changed.</p>
+
+    <p>🏆 Your final score will be displayed at the end.</p>
+
+  </div>
+
+  <button class="main-btn" onclick="startQuiz()">
+    Begin Quiz 
+  </button>
+
+</div>
+<!-- QUIZ -->
+<div id="quiz" class="screen">
+
+  <div class="top">
+    <span id="qno"></span>
+
+    <div class="timer">
+      <svg viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="18"></circle>
+        <circle id="arc" cx="22" cy="22" r="18"></circle>
+      </svg>
+      <span id="time">15</span>
+    </div>
+
+    <span>Score: <b id="score">0</b></span>
+  </div>
+
+  <div class="progress">
+    <div id="bar"></div>
+  </div>
+
+  <h2 id="question"></h2>
+
+  <div id="options"></div>
+
+  <button id="next" onclick="nextQ()" disabled>Next </button>
+
+</div>
+
+<!-- RESULT -->
+<div id="result" class="screen center">
+
+  <h1 id="title"></h1>
+
+  <!-- SCORE CIRCLE -->
+  <div class="score-circle">
+
+    <svg viewBox="0 0 120 120">
+
+      <circle cx="60" cy="60" r="50" class="bg-circle"></circle>
+
+      <circle cx="60" cy="60" r="50" id="progress-circle"></circle>
+
+    </svg>
+
+    <div class="score-text">
+      <span id="score-big">0</span>
+      <span>/10</span>
+    </div>
+
+  </div>
+
+  <h2 id="final"></h2>
+
+  <button onclick="restart()">Try Again</button>
+
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+  Developed by <b>Kuram Vasini</b>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
