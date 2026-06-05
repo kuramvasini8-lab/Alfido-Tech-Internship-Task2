@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-header">
+  <h1>Web Development Quiz Application</h1>
+</div>
+
+<div id="welcome" class="screen active">
+  <h1>Welcome to the Quiz </h1>
+  <button onclick="showInstructions()">Start</button>
+</div>
+
+<div id="instructions" class="screen">
+  <h2>Instructions</h2>
+    Quiz consists of 5 Questions.<br>
+    Each question has 10 seconds.<br>
+    Once selected, answer cannot be changed.<br>
+    Score will be shown at the end.<br>
+  <button onclick="startQuiz()">Begin Quiz</button>
+</div>
+
+<div id="quiz" class="screen">
+  <div class="timer-circle">
+  <svg>
+    <circle class="bg" cx="50" cy="50" r="40"></circle>
+    <circle class="progress" cx="50" cy="50" r="40"></circle>
+  </svg>
+  <div id="time">10</div>
+</div>
+  <h2 id="question"></h2>
+  <div id="options"></div>
+</div>
+
+<div id="result" class="screen">
+  <h1>Result</h1>
+  <p id="scoreText"></p>
+  <button onclick="restart()">Restart</button>
+</div>
+
+  <footer class="footer">
+    Developed by Kuram Vasini © 2026
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
